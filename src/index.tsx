@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import TestApp from "./TestApp";
 import reportWebVitals from "./reportWebVitals";
-import { ConnectionStatusProvider } from "./context/connectionStatus";
 import { Buffer } from "buffer";
 window.Buffer = Buffer; // Make Buffer available globally if needed
 
@@ -12,9 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ConnectionStatusProvider>
-      <App />
-    </ConnectionStatusProvider>
+    <TestApp />
   </React.StrictMode>
 );
 
